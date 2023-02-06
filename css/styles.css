@@ -23,7 +23,8 @@ h2{
 }
 .container-fluid
 {
-padding:3% 15%;
+padding:3% 15% 7%;
+
 
 }
 .navbar-brand
@@ -51,11 +52,17 @@ padding:3% 15%;
 }
 .title-image
 {
-    width: 60% ;
+    /* width: 60% ; */
     transform: rotate(25deg);
+    max-width: 60%;
+    position: absolute;
+    right: 20%;
 }
 #features{
     padding: 7% 15%;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
 
 }
 .features-box
@@ -82,7 +89,6 @@ padding:3% 15%;
 /* testimonial section */
 #testimonials
 {
-padding: 7% 15%;
 text-align: center;
 background-color: #ef8172;
 color: #fff;
@@ -93,6 +99,9 @@ color: #fff;
     width: 10%;
     border-radius: 100%;
     margin: 20px;
+}
+.carousel-item{
+    padding: 7% 15%;
 }
 #press
 {
@@ -106,4 +115,63 @@ color: #fff;
     margin: 20px 20px 50px;
     
 
+}
+
+
+/* pricing */
+
+#pricing
+{
+    padding: 100px;
+    text-align: center;
+}
+.pricing-column
+{
+    padding: 3% 2%;
+}
+
+/* cta */
+
+#cta
+{
+    background-color: #ff4c68; 
+    color: #fff;
+    padding: 7% 15%;
+    text-align: center;
+}
+
+.ctatext
+{
+        
+font-family: 'Lilita One', cursive;
+font-size: 3.5rem;
+line-height: 1.5;
+text-align: center;
+
+}
+
+/* footer */
+
+#footer
+{
+    padding: 7% 15%;
+    text-align: center;
+}
+.social-icon
+{
+    margin: 20px 10px;
+}
+
+
+@media (max-width:1028px) {
+    #title
+    {
+        text-align: center;
+    }
+    .title-image
+    {
+        position: static;
+        transform: rotate(0);
+    }
+    
 }
